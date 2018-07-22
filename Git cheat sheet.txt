@@ -1,0 +1,98 @@
+SET-UP
+==========================
+git config --global user.name
+git config --global user.email
+
+QUICK START
+==========================
+- Create a new repository
+	cd directory
+	git init
+	git commit -m "Note"
+	git remote add origin https://github.com/Username/Name.git	- (where origin is location name)
+	git push -u origin master
+- Push an existing repository from the command line
+	git remote add origin https://github.com/Username/Name.git
+	git push -u origin master
+
+DIRECTORIES
+==========================
+- Create a new directory
+	mkdir project
+- Browse to a directory
+	cd directory
+- Initialise a directory
+	git init
+- List all files in a directory
+	ls - a
+- Create a new file
+	git add README.md
+- Create an ignore file (paste filenames of files not to be tracked, like files with sensitive data)
+	touch .gitignore
+
+REPOSITORIES
+==========================
+	git remote add origin https://github.com/Username/Name.git	- (where origin is location name)
+
+PUSHING
+==========================
+- Push an existing repository from the command line
+	git remote add origin https://github.com/Username/Name.git
+	git push -u origin master
+
+TRACKING
+==========================
+- Check the status of all files (not tracked/staged/committed)
+	git status
+- Log file
+	git log
+
+CLONING
+==========================
+	git clone https://github.com/Username/Name.git
+
+PULLING
+==========================
+	git pull origin master
+
+COMMITTING
+==========================
+	git commit -m "Note"
+- Commit all files
+	git commit -a -m "Commit all"
+	git commit -am (add and commit)
+
+DIFFERENCE
+==========================
+	git diff HEAD - show all changes to tracked files
+	git diff --staged - show changes to files in the "staged" area
+
+RESET
+==========================
+	git reset file1 - reset stage
+	git reset HEAD-# (where # is the number of commits to rollback to)
+	git checkout -- file1 (same as reset HEAD, resets to the last comitted version)
+	
+AMEND
+==========================
+* Lets you combine staged changes with previous commit instead of creating a new commit, or to just edit th elast commit message.
+git commit --amend -m "updated commit message"
+	
+BRANCHING
+==========================
+* don't forget to do all the standard procedures like add file, commit, push
+	git branch NewBranch
+	git checkout NewBranch
+	git checkout -b NewBranch1
+
+VISUAL DIAGRAM
+==========================
+	gitk --all (visual representation)
+	
+
+	
+REFERENCES
+==========================	
+SoloLearn
+
+Author: Konstantin Pokhilchuk
