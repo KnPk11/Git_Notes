@@ -8,6 +8,7 @@ QUICK START
 - Create a new repository
 	cd directory
 	git init
+	git add . (adds all files in folder)
 	git commit -m "Note"
 	git remote add origin https://github.com/Username/Name.git	- (where origin is location name)
 	git push -u origin master
