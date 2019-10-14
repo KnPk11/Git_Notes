@@ -78,6 +78,10 @@ AMEND
 ==========================
 * Lets you combine staged changes with previous commit instead of creating a new commit, or to just edit th elast commit message.
 git commit --amend -m "updated commit message"
+
+DELETING
+==========================
+git branch -d OldBranch
 	
 BRANCHING
 ==========================
@@ -89,8 +93,6 @@ BRANCHING
 VISUAL DIAGRAM
 ==========================
 	gitk --all (visual representation)
-	
-
 	
 REFERENCES
 ==========================	
